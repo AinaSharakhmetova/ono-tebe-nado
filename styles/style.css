@@ -1,1 +1,23 @@
-/* место для вашего кода */
+.header {
+    display: grid;
+    /* grid-template-columns: 
+    grid-template-rows: */
+    font-size: 18;
+
+}
+
+.header_menu-list {
+    list-style: circle outside;
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 26px;    
+}
+
+
+/* не работает
+.menu-item_active .header_menu-link {
+    text-decoration: none;
+}*/
+
+
+
