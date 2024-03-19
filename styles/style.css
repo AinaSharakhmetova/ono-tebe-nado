@@ -119,7 +119,7 @@ li::marker {
   padding: 0 50px 51px 78px;
   display: flex;
   flex-flow: row nowrap;
-  gap: 79px;
+  gap: 78px;
   align-items: center;
 }
 
