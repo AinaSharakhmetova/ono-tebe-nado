@@ -1,1 +1,0 @@
-Project work of the first sprint. No idea what the hell is going on.
