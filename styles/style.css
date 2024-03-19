@@ -119,20 +119,20 @@ li::marker {
   padding: 0 50px 51px 78px;
   display: flex;
   flex-flow: row nowrap;
-  gap: 78px;
+  justify-content: space-between;
   align-items: center;
 }
 
 .cover__description-text {
   font-weight: 400;
   font-size: 22px;
-  word-spacing: 18px;
+  word-spacing: 19px;
 }
 
 .bet-button {
   border: 1px solid #fff;
   background: transparent;
-  padding: 11px 30px 12px;
+  padding: 11px 30px 12px 32px;
   font-size: 22px;
   text-transform: uppercase;
   font-weight: 500;
