@@ -1,12 +1,8 @@
 .header {
   display: grid;
-  grid-template-columns: 1fr 135px 1fr;
-  min-height: 293px;
+  grid-template-columns: 1fr min-content 1fr;
   align-items: center;
-}
-
-.header__menu {
-  padding-left: 51px;
+  padding: 93px 0 95px;
 }
 
 .header__links-list {
@@ -15,17 +11,22 @@
   flex-flow: row nowrap;
   align-items: end;
   gap: 31px;
-}
-
-.header__link {
-  font-size: 18px;
-  text-underline-offset: 3px;
-  line-height: 22px;
-  letter-spacing: 0.01em;
+  padding-left: 51px;
 }
 
 .header__links-list .header__links-list-item_no-bullit {
   list-style-type: none;
+}
+
+li::marker {
+  font-size: 1.3em;
+}
+
+.header__link {
+  font-size: 18px;
+  text-underline-offset: 4px;
+  line-height: 22px;
+  letter-spacing: 0.01em;
 }
 
 .header__links-list-item .header__link_active {
@@ -33,25 +34,21 @@
   pointer-events: none;
 }
 
-li::marker {
-  font-size: 1.3em;
-}
-
 .header__logo {
   border: #000 6px;
   width: 135px;
-  height: 107px;
+  height: 105px;
 }
 
 .address {
   font-style: normal;
   font-size: 18px;
-  line-height: 1.35;
+  line-height: 24px;
 }
 
 .header__address {
-  padding-left: 193.86px;
-  padding-right: 52px;
+  justify-self: end;
+  padding-right: 86px;
 }
 
 .phone {
@@ -72,26 +69,14 @@ li::marker {
   text-transform: uppercase;
 }
 
-.overlay {
-  width: 100%;
-  height: 100%;
-  background-color: rgb(0 0 0 / 0.6);
-  position: absolute;
-  inset: 0;
-}
-
-.cover__title,
-.cover__description {
-  position: relative;
-  z-index: 1;
-}
-
 .cover__title {
   font-size: 100px;
   font-weight: 700;
   letter-spacing: 0.3em;
   padding: 165px 50px 135px;
   line-height: 1.15;
+  position: relative;
+  z-index: 1;
 }
 
 .aligned-text {
@@ -122,6 +107,8 @@ li::marker {
   flex-flow: row nowrap;
   justify-content: space-between;
   align-items: center;
+  position: relative;
+  z-index: 1;
 }
 
 .cover__description-text {
@@ -139,6 +126,14 @@ li::marker {
   font-weight: 500;
   font-family: Raleway, sans-serif;
   color: #fff;
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0 0 0 / 0.6);
+  position: absolute;
+  inset: 0;
 }
 
 .lots {
@@ -186,7 +181,7 @@ li::marker {
 }
 
 .card_type_film {
-  background-image: url(../images/card-lot-01.jpg);  
+  background-image: url(../images/card-lot-01.jpg);
 }
 
 .card_type_book {
@@ -256,7 +251,8 @@ li::marker {
   display: flex;
   flex-direction: column;
   gap: 24px;
-  width: 693px;
+  width: 100%;
+  max-width: 693px;
 }
 
 .footer {
@@ -290,14 +286,14 @@ li::marker {
   display: flex;
   flex-flow: row nowrap;
   justify-content: end;
+  gap: 48px;
+}
+
+.footer__social-link {
+  text-decoration: none;
 }
 
 .footer__social-icon {
   height: 48px;
   width: 48px;
-}
-
-.footer__social-link {
-  text-decoration: none;
-  padding-left: 44px;
 }
